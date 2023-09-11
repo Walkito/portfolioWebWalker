@@ -1,0 +1,151 @@
+:root{
+    --corFundo: rgb(26, 38, 83);
+}
+
+@media screen and (min-width: 320px ) {
+    .habilidadesDentro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(13, 1fr);
+        height: 1950px;
+        border: 10px solid rgb(0, 0, 0);
+        border-radius: 30px;
+        margin: 20% 3% 20% 3%;
+        background-color: var(--corFundo);;
+    }
+
+    .habilidadesDentro h2{
+        text-align: center;
+        grid-column: 1 / 3;
+        grid-row: 1;
+        font-size: 60px;
+        margin: 5% 0 15% 0;
+        color: white;
+    }
+
+    .nivel{
+        width: 0px;
+        height: 40px;
+        border: 3px rgb(0, 0, 0) solid;
+        margin: 25% 0 0 -10%;
+    }  
+
+    .nivelAnimado{
+        animation: moverNivel forwards 0.75s;
+    }
+
+    @keyframes moverNivel {
+        100%{
+            width: 135px;
+        }
+    }
+
+    .paragrafoAnimado{
+        animation: moverParagrafo forwards 0.75s;
+    }
+
+    .nivel p{
+        margin: 2% 0 0 -35%;
+        opacity: 0;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+    }
+
+    @keyframes moverParagrafo {
+        100%{
+            opacity: 1;
+            margin: 2% 0 0 30%;
+        }
+    }
+
+    .habilidade1, .habilidade2, .habilidade3, .habilidade4, .habilidade5, .habilidade6, .habilidade7, .habilidade8
+    .habilidade9, .habilidade10, .habilidade11{
+        display: flex;
+        margin: 0 0 20% 0;
+    }
+
+    .habilidade1 img{
+        margin: -5% 0 15% -15%;
+        width: 110%;
+    }
+
+    .habilidade2 img, .habilidade3 img{
+        margin: 0 0 15% 0;
+        width: 80%;
+    }
+
+    .habilidade4 img{
+        margin: 0 0 15% 14%;
+        width: 55%;
+    }
+
+    .habilidade5 img{
+        margin: 5% 0 15% 0;
+        width: 80%;
+    }
+
+    .habilidade6 img{
+        margin: -15% 0 15% -15%;
+        width: 110%;
+    }
+
+    .habilidade7 img{
+        margin: -10% 0 15% 9%;
+        width: 65%;
+    }
+
+    .nivel7{
+        margin: -20% 0 0 0;
+    }
+
+    .habilidade8 img {
+        margin: 13% 0 15% 15%;
+        width: 60%;
+    }
+
+    .nivel8{
+        margin: 20% 0 0 0;
+    }
+
+    .habilidade9 img{
+        margin: 20% 0 15% 8%;
+        width: 70%;
+    }
+
+    .nivel9{
+        margin: 15% 0 0 0;
+    }
+
+    .habilidade10 img{
+        margin: 10% 0 15% 10%;
+        width: 70%;
+    }
+
+    .nivel10{
+        margin: 5% 0 0 0;
+    }
+
+    .habilidade11 img{
+        margin: -7% 0 0 -25%;
+        width: 135%;
+    }
+
+    .nivel11{
+        margin: -4% 0 0 0;
+    }
+}
+
+@media screen and (min-width: 360px){
+    .habilidadesDentro{
+        height: 2100px;
+    }
+    .nivel{
+        margin: 25% 0 0 -7%;
+    }
+    @keyframes moverNivel {
+        100%{
+            width: 150px;
+        }
+    }
+}

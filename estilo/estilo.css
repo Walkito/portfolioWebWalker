@@ -1,0 +1,655 @@
+:root{
+    --corFundo: rgb(4, 19, 71);
+}
+
+header{
+    background-color: var(--corFundo);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--corFundo);
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+@media screen and (min-width: 320px ) {
+
+        .imgMenu img{
+            width: 20%;
+        }
+
+        .imgMenu{
+            display: inline-block;
+            position: fixed;
+            top: -5px;
+            left: 0px;
+            z-index: 1;
+            background-color: var(--corFundo);
+            height: 65px;
+            width: 100%;
+            animation: menuAnimation 3s forwards;
+            opacity: 0;
+        }
+
+        .imgMenu h2{
+            position: relative;
+            display: inline;
+            bottom: 23px;
+            left: 12px;
+            color: white;
+        }
+        
+        @keyframes menuAnimation {
+            100%{
+                opacity: 1;
+            }
+        }
+
+        .nav img{
+            position: absolute;
+            width: 30%;
+            left: 0px;
+            top: -5px
+        }
+
+        .nav{   
+            top: -1px;
+            left: 0px;
+            position: fixed;
+            background-color: var(--corFundo);
+            z-index: 3;
+            color: white;
+            height: 465px;
+            width: 225px;
+            display: none;
+            transform: translateX(-100%);
+            animation: navAnimation 0.5s forwards;
+            border-radius: 20px;
+        }
+
+        .navVoltando{
+            animation: navAnimationVolta 0.5s backwards;
+        }
+
+        @keyframes navAnimation {
+            100%{
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes navAnimationVolta{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-100%);
+                display: none;
+            }
+        }
+
+        .nav a{
+            color: white;
+        }
+
+        .nav ul{
+            margin:5% 0 0 13%;
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        .nav ul li{
+            font-size: 28px;
+            font-weight: bolder;
+            margin: 0 0 28% 0;
+        }
+
+        .nomeTitulo{
+            display: block;
+            background-color: var(--corFundo);
+            height: 385px;
+            margin: 0;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .cursor{
+            position: absolute;
+            height: 50px;
+            width: 2px;
+            background-color: white;
+            animation: cursor-blink 0.8s infinite;
+        }
+        
+        .primeiroNome, .sobrenome, .subtitulo{
+            text-align: center;
+            opacity: 0;
+        }
+        
+        .primeiroNome{
+            font-size: 50px;
+            margin: 30% 0 0 0;
+            letter-spacing: 3px;
+            color: rgb(165, 165, 204);
+        }
+        
+        .sobrenome{
+            margin: -30% 0 0 0;
+            padding: 0;
+            font-size: 65px;
+            letter-spacing: 5px;
+            color: white;
+        }
+        
+        .subtitulo{
+            margin: 18% 0 0 0;
+            color: white;
+            font-size: 35px;
+        }
+        
+        @keyframes cursor-blink {
+            0%, 100%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+        }
+
+        .sobreMim{
+            padding: 5% 0 0 0;
+            margin: 3%;
+            border: var(--corFundo) 2px solid;
+            border-radius: 30px;
+            opacity: 0;
+        }
+        
+        .sobreMimVisible{
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .tituloQuem{
+            text-align: center;
+            margin: 15% 0 15% 0;
+            font-size: 55px;
+        }
+        
+        .sobreMim img{
+            display: block;
+            margin: 0 auto 0 auto;
+            width: 85%;
+        }
+        
+        .sobreMim p{
+            margin: 4%;
+            font-size: 26px;
+            text-align: center;
+        }
+    
+        .frase{
+            margin: 40% 0 0% 0;
+            padding: 15% 0 15% 0;
+            background-color: black;
+        }    
+
+        .frase h1,h4{
+            color: white;
+        }
+
+        .frase h1{
+            text-align: center;
+            margin: 6%;
+            font-size: 30px;
+        }
+
+        .frase h4{
+            margin: 0 10% 0 0;
+            font-size: 20px;
+            text-align: right;
+        }
+
+        .sectionSoftSkills{
+            background-color: var(--corFundo);
+            height: 653s5px;
+            width: 100%;
+            border: 1px solid var(--corFundo);;
+        }
+
+        .softSkills{
+            margin: 20% 3% 20% 3%;
+            border: 10px rgb(0, 0, 0) solid;
+            border-radius: 30px;
+            background-color: white;
+        }
+
+        .softSkills img{
+            display: block;
+            width: 60%;
+            margin: 40% auto 0 auto;
+            opacity: 0;
+        }
+
+        .softSkillsRodarImagem{
+            animation: rodarImagem 1.5s forwards;           
+        }
+
+        @keyframes rodarImagem {
+            100% {
+                opacity: 1;
+                transform: rotate(360deg);
+            }
+        }
+
+        .softSkills h1{
+            text-align: center;
+            font-size: 60px;
+            margin: 20% 0 0 0;
+        }
+
+        .softSkills h3{
+            text-align: center;
+            font-size: 25px;
+            color: var(--corFundo);
+            opacity: 0;
+        }
+
+        .softSkillsTituloAnimado{
+            animation: fadeInAnimation 4s forwards;
+        }
+
+        .projetos{
+            margin: 35% 0 0 0;
+            position: relative;
+            z-index: 0;
+        }
+
+        .projetos h1{
+            text-align: center;
+            font-size: 55px;
+        }
+
+        .projetos h3{
+            text-align: center;
+            font-size: 40px;
+            margin: 3% 0 5% 0;
+            color: var(--corFundo);
+        }
+
+        .projetos button{
+            width: 200px;
+            height: 75px;
+            display: block;
+            margin: 10% auto 10% auto;
+            background-color: var(--corFundo);
+            color: white;
+            border-radius: 20px;
+            font-size: 28px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .projeto1, .projeto2, .projeto3, .projeto4{
+            margin: 0 5% 15% 5%;
+            border: 2px black solid;
+            border-radius: 10px;
+        }
+
+        .projeto1, .projeto3{
+            transform: translateX(-100%);
+        }
+
+        .projeto2, .projeto4{
+            transform: translateX(100%);
+
+        }
+
+        .slideEsquerda{
+            animation: slideEsquerda 0.5s forwards;
+        }
+
+        .slideDireita{
+            animation: slideDireita 0.5s forwards;
+        }
+
+        @keyframes slideEsquerda{
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideDireita{
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .projeto1 img, .projeto2 img, .projeto3 img, .projeto4 img{
+            display: block;
+            margin: 0 auto 0 auto;
+            border: 5px solid black;
+            width: 90%;
+        }
+
+        .verMais{
+            overflow: hidden;
+            top: -5px;
+            margin: 5%;
+            position: fixed;
+            z-index: -1; 
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 500px;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .verMais h3{
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .verMais button{
+            display: block;
+            margin: 0 auto 15% auto;
+            width: 200px;
+            height: 85px;
+            font-size: 24px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .verMais h5{
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .verMais p{
+            text-indent: 1em;
+            text-align: justify;
+            margin: 5% 4%;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .verMais1 img, .verMais2 img, .verMais3 img, .verMais4 img{
+            display: block;
+            margin: 0 auto 10% auto;
+            width: 90%;
+            border: 5px solid black;
+            transition: 1s;
+        }
+
+        .verMais1, .verMais2, .verMais3, .verMais4{
+            overflow-y: auto;
+            height: 100%;
+            opacity: 0;
+            display: none;
+            transition: 1s;
+        }
+
+        .verMais1 h1, .verMais2 h1, .verMais3 h1, .verMais4 h1{
+            display: block;
+            text-align: right;
+            margin: 5% 5% -8% 0;
+            transition: 1s;
+        }
+
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; 
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .contato h1{
+            text-align: center;
+            font-size: 60px;
+            margin: 0;
+            padding: 35px 0 0 0;
+        }
+
+        .contato{
+            margin: 0;
+            background-color: black;
+            color: white;
+            height: 1950px;
+        }
+
+        .contato h3{
+            text-align: center;
+            font-size: 28px;
+            margin: 2% 0 0 0;
+        }
+
+        .contato :nth-child(5) h3{
+            font-size: 20px;
+        }
+
+        .contato1, .contato2, .contato3, .contato4, .contato5, .contato6{
+            display: block;
+            margin: 15% auto 0 auto;
+            width: 65%;
+            transition: 1.5s;
+        }
+
+        .contato1{
+            width: 65%;
+        }
+
+        .contato2{
+            width: 55%;
+        }
+
+        .contato5{
+            width: 55%;
+        }
+
+        .contato1:hover{
+            content: url('/imagens/icons/whatsappBranco.png');
+            transform: scale(0.8);         
+        }
+
+        .contato2:hover{
+            content: url('/imagens/icons/emailBranco.png');
+            transform: scale(0.8);          
+        }
+
+        .contato3:hover{
+            content: url('/imagens/icons/localizacaoBranco.png');
+            transform: scale(0.8);        
+        }
+
+        .contato4:hover{
+            content: url('/imagens/icons/instagramBranco.png');
+            transform: scale(0.8);
+        }
+
+        .contato5:hover{
+            content: url('/imagens/icons/linkedinBranco.png');
+            transform: scale(0.8);
+        }
+
+        .contato6:hover{
+            content: url('/imagens/icons/gitHubBranco.png');
+            transform: scale(0.8);
+        }
+
+        footer{
+            margin: 0;
+            padding: 10% 0 0 0;
+            font-size: 15px;
+        }
+
+        footer p{
+            margin: 0 0 20% 0;
+            text-align: center;
+        }
+
+        footer a{
+            margin: 0 2% 0 2%;
+        }
+
+        .referencias{
+            margin: 0 5%;
+        }
+
+        .referencias p{
+            margin: 0 0 5% 0;
+        }
+}
+
+@media screen and (min-width: 360px){
+        .imgMenu img{
+            margin-left: 2%;
+        }
+
+        .nav img{
+            width: 25%;
+            margin-left: 2%;
+            margin-top: 3%;
+        }
+
+        .nav{
+            width: 300px;
+            height: 620px;
+        }
+
+        .nav ul{
+            margin-left: 18%;
+        }
+
+        .nav ul li{
+            font-size: 38px;
+        }
+
+        .primeiroNome{
+            margin: 25% 0 0 0;
+            font-size: 55px;
+        }
+
+        .sobrenome{
+            font-size: 70px;
+        }
+
+        .subtitulo{
+            margin: -5% 0 0 0;
+            font-size: 45px;
+        }
+
+        .cursor{
+            height: 55px;
+        }
+
+        .tituloQuem{
+            font-size: 65px;
+        }
+        .sobreMim img{
+            width: 100%;
+        }
+        
+        .sobreMim p{
+            font-size: 28px;
+        }
+
+        .frase h1{
+            font-size: 35px;
+        }
+
+        .frase h4{
+            font-size: 22px;
+        }
+
+        .softSkills{
+            margin-top: 40%;
+        }
+
+        .softSkills h1{
+            font-size: 65px;
+        }
+
+        .softSkills img{
+            width: 70%;
+        }
+
+        .projetos{
+            margin-bottom: 35%;
+        }
+
+        .projetos h1{
+            font-size: 75px;
+        }
+
+        .projetos h3{
+            font-size: 50px;
+        }
+
+        .verMais{
+            height: 735px;
+        }
+
+        .verMais h1{
+            font-size: 30px;
+        }
+
+        .verMais h3{
+            font-size: 40px;
+        }
+
+        .verMais h5{
+            font-size: 16px;
+        }
+
+        .verMais p{
+            font-size: 25px;
+        }
+
+        .verMais button{
+            width: 250px;
+            height: 100px;
+            font-size: 30px;
+        }
+
+        .contato{
+            height: 2145px;
+        }
+
+        footer p{
+            font-size: 16px;
+        }
+
+        .footer p{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+}
+    
