@@ -149,3 +149,79 @@
         }
     }
 }
+
+@media screen and (min-width: 375px){
+    .habilidadesDentro{
+        height: 2190px;
+    }
+
+    @keyframes moverNivel {
+        100%{
+            width: 160px;
+        }
+    }
+}
+
+@media screen and (min-width: 393px){
+    .habilidadesDentro{
+        height: 2290px;
+    }
+
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+
+    .habilidade2 img{
+        margin: 7% 0 15% 0%;
+        width: 90%;
+    }
+
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+    .habilidade1 img{
+        margin: -5% 0 15% -30%;
+        width: 140%;
+    }
+
+    .nivel{
+        margin: 40% 0 0 -7%;
+    }
+
+    @keyframes moverNivel {
+        100%{
+            width: 170px;
+        }
+    }
+}

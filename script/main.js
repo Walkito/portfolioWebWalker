@@ -100,16 +100,16 @@ function cursorAnimado(){
     let linha = 1;
 
     letras = separarLetras(primeiroNome.textContent);
-    adicionarLetras(linha, primeiroNome, letras, 0, cursor,resolucaoCliente);
+    adicionarLetras(linha, primeiroNome, letras, 0, cursor);
 
     setTimeout(function(){
         letras = separarLetras(sobrenome.textContent);
-        adicionarLetras(linha+1, sobrenome, letras, 0, cursor,resolucaoCliente);    
+        adicionarLetras(linha+1, sobrenome, letras, 0, cursor);    
     },tempo);
 
     setTimeout(function(){
         letras = separarLetras(subtitulo.textContent);
-        adicionarLetras(linha+2, subtitulo, letras, 0, cursor,resolucaoCliente);    
+        adicionarLetras(linha+2, subtitulo, letras, 0, cursor);    
     },tempo*2);
 
     function separarLetras(palavra){
@@ -120,7 +120,9 @@ function cursorAnimado(){
         let intervalo;
         let posicaoBottomInicial;
         let posicaoEsqInicial;
-        if(resolucaoCliente >= 360){
+        if(resolucaoCliente >= 393){
+            posicaoEsqInicial = 57;
+        } else if(resolucaoCliente >= 360){
             posicaoEsqInicial = 55;
         } else if(resolucaoCliente >= 320){
             posicaoEsqInicial = 50;
@@ -128,10 +130,17 @@ function cursorAnimado(){
       
         switch(linha){
             case 1:
-                posicaoBottomInicial = 60;
+                if(resolucaoCliente >= 393){
+                    posicaoBottomInicial = 54;
+                } else{
+                    posicaoBottomInicial = 60;
+                }
                 break;
             case 2:
-                if(resolucaoCliente >= 360){
+                if(resolucaoCliente >= 393){
+                    cursor.style.height = '80px';
+                    posicaoBottomInicial = 34;
+                } else if(resolucaoCliente >= 360){
                     cursor.style.height = '70px';
                     posicaoBottomInicial = 38;  
                 } else if(resolucaoCliente >= 320){
@@ -140,7 +149,11 @@ function cursorAnimado(){
                 }
                 break;
             case 3:
-                if(resolucaoCliente >= 360){
+                if(resolucaoCliente >= 393){
+                    cursor.style.height = '50px';
+                    posicaoBottomInicial = 8;
+                    posicaoEsqInicial = 50;
+                } else if(resolucaoCliente >= 360){
                     cursor.style.height = '45px';
                     posicaoBottomInicial = 11;  
                 } else if(resolucaoCliente >= 320){
@@ -176,6 +189,7 @@ function cursorAnimado(){
     function novaPosicaoEsquerda(linha, posicaoEsqInicial){
         switch(linha){
             case 1:
+                
                 if(resolucaoCliente >= 360){
                     return (posicaoEsqInicial + 4);
                 } else if(resolucaoCliente >= 320){
@@ -188,7 +202,11 @@ function cursorAnimado(){
                     return (posicaoEsqInicial + 6.5);
                 }
             case 3:
-                return (posicaoEsqInicial + 3); 
+                if(resolucaoCliente >= 393){
+                    return (posicaoEsqInicial + 3.5);
+                } else{
+                    return (posicaoEsqInicial + 3); 
+                }
         } 
     }
 }

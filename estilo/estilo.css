@@ -102,6 +102,7 @@ footer a{
 
         .nav a{
             color: white;
+            transition: 0.5s;
         }
 
         .nav ul{
@@ -114,6 +115,11 @@ footer a{
             font-size: 28px;
             font-weight: bolder;
             margin: 0 0 28% 0;
+
+        }
+
+        .nav a:hover{
+            color: black;
         }
 
         .nomeTitulo{
@@ -529,6 +535,11 @@ footer a{
 }
 
 @media screen and (min-width: 360px){
+
+        .imgMenu h2{
+            bottom: 28px;
+        }
+
         .imgMenu img{
             margin-left: 2%;
         }
@@ -652,4 +663,67 @@ footer a{
             margin-right: 5%;
         }
 }
-    
+
+@media screen and (min-width: 375px){
+    .imgMenu h2{
+        bottom: 30px;
+    }
+
+    .verMais{
+        height: 700px;
+    }
+
+    .contato{
+        height: 2240px;
+    }
+}
+
+@media screen and (min-width: 393px){
+    .imgMenu{
+        height: 75px;
+
+    }
+
+    .nav{
+        width: 350px;
+        height: 660px;
+    }
+
+    .nav ul li{
+        font-size: 40px;
+    }
+
+    .nomeTitulo{
+        height: 460px;
+    }
+
+    .primeiroNome{
+        margin: 35% 0 0 0;
+        font-size: 62px;
+    }
+
+    .sobrenome{
+        font-size: 80px;
+    }
+
+    .subtitulo{
+        margin: -6% 0 0 0;
+        font-size: 50px;
+    }
+
+    .cursor{
+        height: 62px;
+    }
+
+    .tituloQuem{
+        font-size: 70px;
+    }
+
+    .sobreMim p{
+        font-size: 30px;
+    }
+
+    .softSkills img{
+        width: 85%;
+    }
+}
