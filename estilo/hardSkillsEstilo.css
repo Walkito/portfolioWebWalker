@@ -164,54 +164,54 @@
 
 @media screen and (min-width: 393px){
     .habilidadesDentro{
-        height: 2290px;
+        height: 2780px;
     }
 
     .habilidade1 img{
-        margin: -5% 0 15% -30%;
+        margin: -5% 0 25% -30%;
         width: 140%;
     }
 
     .habilidade2 img{
-        margin: 7% 0 15% 0%;
+        margin: 7% 0 25% 0%;
         width: 90%;
     }
 
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade3 img{
+        margin: 8% 0 30% 3%;
+        width: 85%;
     }
 
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade4 img{
+        margin: 6% 0 15% 12%;
+        width: 68%;
     }
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade5 img{
+        margin: 12% 0 35% 0%;
+        width: 87%;
     }
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade6 img{
+        margin: -22% 0 20% -25%;
+        width: 145%;
     }
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade7 img{
+        margin: -5% 0 20% 5%;
+        width: 80%;
     }
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade8 img{
+        margin: 15% 0 20% 10%;
+        width: 70%;
     }
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade9 img{
+        margin: 25% 0 30% 4%;
+        width: 80%;
     }
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
-        width: 140%;
+    .habilidade10 img{
+        margin: 5% 0 25% 7%;
+        width: 80%;
     }
-    .habilidade1 img{
-        margin: -5% 0 15% -30%;
+    .habilidade11 img{
+        margin: 5% 0 15% -25%;
         width: 140%;
     }
 
@@ -222,6 +222,23 @@
     @keyframes moverNivel {
         100%{
             width: 170px;
+        }
+    }
+}
+
+@media screen and (min-width: 412px){
+    .habilidadesDentro{
+        height: 2900px;
+    }
+
+    .habilidadesDentro p{
+        line-height: 120%;
+        font-size: 28px;
+    }
+
+    @keyframes moverNivel {
+        100%{
+            width: 180px;
         }
     }
 }

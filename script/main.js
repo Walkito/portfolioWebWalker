@@ -10,12 +10,6 @@ const numImagens = 18;
 const numeroDeNiveis = 11;
 const numProjetos = 4;
 
-if(resolucaoCliente >= 360){
-    global(resolucaoCliente);
-} else if(resolucaoCliente >= 320){
-    global(resolucaoCliente);
-}
-
 function global(){
     abrirMenu();
     fecharMenu();
@@ -65,7 +59,7 @@ function global(){
     },10);
 
     botoesVerMais();
-};
+}
 
 function abrirMenu(){
     const imgMenu = pegarElemento('.imgMenu img');
@@ -137,7 +131,10 @@ function cursorAnimado(){
                 }
                 break;
             case 2:
-                if(resolucaoCliente >= 393){
+                if(resolucaoCliente >= 412){
+                    cursor.style.height = '85px';
+                    posicaoBottomInicial = 34;
+                } else if(resolucaoCliente >= 393){
                     cursor.style.height = '80px';
                     posicaoBottomInicial = 34;
                 } else if(resolucaoCliente >= 360){
@@ -149,7 +146,11 @@ function cursorAnimado(){
                 }
                 break;
             case 3:
-                if(resolucaoCliente >= 393){
+                if(resolucaoCliente >= 412){
+                    cursor.style.height = '54px';
+                    posicaoBottomInicial = 8;
+                    posicaoEsqInicial = 50;
+                } else if(resolucaoCliente >= 393){
                     cursor.style.height = '50px';
                     posicaoBottomInicial = 8;
                     posicaoEsqInicial = 50;
@@ -332,5 +333,5 @@ function estaTela(elemento){
     }
 }
 
-
+global();
 

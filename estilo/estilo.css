@@ -681,7 +681,10 @@ footer a{
 @media screen and (min-width: 393px){
     .imgMenu{
         height: 75px;
+    }
 
+    .imgMenu h2{
+        font-size: 30px;
     }
 
     .nav{
@@ -725,5 +728,53 @@ footer a{
 
     .softSkills img{
         width: 85%;
+    }
+
+    .verMais{
+        top: 40px;
+    }
+
+    .contato{
+        padding-bottom: 70px;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 412px){
+    .nomeTitulo{
+        height: 490px;
+    }
+
+    .primeiroNome{
+        margin: 35% 0 0 0;
+        font-size: 66px;
+    }
+
+    .sobrenome{
+        font-size: 85px;
+    }
+
+    .subtitulo{
+        margin: -6% 0 0 0;
+        font-size: 54px;
+    }
+
+    .cursor{
+        height: 66px;
+    }
+
+    .softSkills h3{
+        font-size: 30px;
+    }
+
+    .verMais{
+        top: 55px;
+    }
+
+    .contato{
+        padding-bottom: 140px;
     }
 }
