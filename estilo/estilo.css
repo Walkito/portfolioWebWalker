@@ -300,6 +300,7 @@ footer a{
             margin: 35% 0 0 0;
             position: relative;
             z-index: 0;
+            overflow: hidden;
         }
 
         .projetos h1{
