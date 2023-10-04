@@ -278,8 +278,10 @@ function verMais(num){
 
     overlay.style.opacity = 1;
     overlay.style.zIndex = 1;
+    overlay.style.display = 'block';
     verMais.style.opacity = 1;
     verMais.style.zIndex = 2;
+    verMais.style.display = 'block';
 
     switch(num){
         case 1:
@@ -307,8 +309,10 @@ function verMais(num){
         verMaisN.style.opacity = 0;
         overlay.style.opacity = 0;
         overlay.style.zIndex = -1;
+        overlay.style.display = 'none';
         verMais.style.opacity = 0;
         verMais.style.zIndex = -2;
+        verMais.style.display = 'none';
     })
 }
 

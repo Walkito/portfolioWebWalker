@@ -25,6 +25,15 @@ footer{
 footer a{
     color: white;
 }
+
+.overlay, .verMais{
+    display: none;
+}
+
+.projetos{
+    display: none;
+}
+
 @media screen and (min-width: 320px ) {
 
         .imgMenu img{
