@@ -162,9 +162,9 @@
     }
 }
 
-@media screen and (min-width: 393px){
+@media screen and (min-width: 390px){
     .habilidadesDentro{
-        height: 2780px;
+        height: 2730px;
     }
 
     .habilidade1 img{
@@ -226,6 +226,13 @@
     }
 }
 
+@media screen and (min-width: 393px){
+    .habilidadesDentro{
+        height: 2770px;
+    }
+
+}
+
 @media screen and (min-width: 412px){
     .habilidadesDentro{
         height: 2900px;
@@ -241,4 +248,10 @@
             width: 180px;
         }
     }
+}
+
+@media screen and (min-width: 428px){
+    .habilidadesDentro{
+        height: 3050px;
+    } 
 }

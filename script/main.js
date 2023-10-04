@@ -124,7 +124,7 @@ function cursorAnimado(){
       
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 393){
+                if(resolucaoCliente >= 390){
                     posicaoBottomInicial = 54;
                 } else{
                     posicaoBottomInicial = 60;
@@ -134,7 +134,7 @@ function cursorAnimado(){
                 if(resolucaoCliente >= 412){
                     cursor.style.height = '85px';
                     posicaoBottomInicial = 34;
-                } else if(resolucaoCliente >= 393){
+                } else if(resolucaoCliente >= 390){
                     cursor.style.height = '80px';
                     posicaoBottomInicial = 34;
                 } else if(resolucaoCliente >= 360){
@@ -150,7 +150,7 @@ function cursorAnimado(){
                     cursor.style.height = '54px';
                     posicaoBottomInicial = 8;
                     posicaoEsqInicial = 50;
-                } else if(resolucaoCliente >= 393){
+                } else if(resolucaoCliente >= 390){
                     cursor.style.height = '50px';
                     posicaoBottomInicial = 8;
                     posicaoEsqInicial = 50;
@@ -203,7 +203,7 @@ function cursorAnimado(){
                     return (posicaoEsqInicial + 6.5);
                 }
             case 3:
-                if(resolucaoCliente >= 393){
+                if(resolucaoCliente >= 390){
                     return (posicaoEsqInicial + 3.5);
                 } else{
                     return (posicaoEsqInicial + 3); 

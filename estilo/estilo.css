@@ -678,7 +678,7 @@ footer a{
     }
 }
 
-@media screen and (min-width: 393px){
+@media screen and (min-width: 390px){
     .imgMenu{
         height: 75px;
     }
@@ -744,6 +744,10 @@ footer a{
 }
 
 @media screen and (min-width: 412px){
+    .imgMenu{
+        height: 85px;
+    }
+
     .nomeTitulo{
         height: 490px;
     }
@@ -776,5 +780,11 @@ footer a{
 
     .contato{
         padding-bottom: 140px;
+    }
+}
+
+@media screen and (min-width: 428px) {
+    .contato{
+        padding-bottom: 200px;
     }
 }
