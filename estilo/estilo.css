@@ -757,6 +757,10 @@ footer a{
         height: 85px;
     }
 
+    .imgMenu h2{
+        margin-left: -3%;
+    }
+
     .nomeTitulo{
         height: 490px;
     }
