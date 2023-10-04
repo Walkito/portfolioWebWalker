@@ -147,8 +147,8 @@ function cursorAnimado(){
                 break;
             case 3:
                 if(resolucaoCliente >= 412){
-                    cursor.style.height = '54px';
-                    posicaoBottomInicial = 8;
+                    cursor.style.height = '50px';
+                    posicaoBottomInicial = 10;
                     posicaoEsqInicial = 50;
                 } else if(resolucaoCliente >= 390){
                     cursor.style.height = '50px';
