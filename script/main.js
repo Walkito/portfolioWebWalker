@@ -48,7 +48,17 @@ function global(){
     },10);
 
     intervaloProjetos = setInterval(function(){
-        let elemento = pegarElemento(`.projeto${k} h3`);
+        let elemento;
+        if (k === 1){
+            elemento = pegarElemento(`.projetos h1`);
+            if(estaTela(elemento)){
+                for(let x = 1; x <= numProjetos; x++){
+                    ativarCards(x);
+                }
+            }
+        } else {
+            elemento = pegarElemento(`.projeto${k} h3`);
+        }
         if(estaTela(elemento)){
             slideCards(k);
             k +=1;
@@ -246,6 +256,11 @@ function rodarImagens(elementoImg,i){
     elementoTitulo = pegarElemento(`.softSkill${i} h3`);
     adicionarClasse(elementoImg, 'softSkillsRodarImagem');
     adicionarClasse(elementoTitulo, 'softSkillsTituloAnimado');
+}
+
+function ativarCards(i){
+    let elementoDiv = pegarElemento(`.projeto${i}`);
+    elementoDiv.style.display = 'block';
 }
 
 function slideCards(i){
