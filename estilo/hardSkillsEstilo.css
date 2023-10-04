@@ -2,7 +2,7 @@
     --corFundo: rgb(26, 38, 83);
 }
 
-@media screen and (min-width: 320px ) {
+@media screen and (min-width: 320px){
     .habilidadesDentro{
         display: grid;
         grid-template-columns: 1fr 1fr;

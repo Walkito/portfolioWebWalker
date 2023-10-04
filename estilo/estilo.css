@@ -34,7 +34,7 @@ footer a{
     display: none;
 }
 
-@media screen and (min-width: 320px ) {
+@media screen and (min-width: 320px){
 
         .imgMenu img{
             width: 20%;
@@ -798,7 +798,7 @@ footer a{
     }
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 428px){
     .contato{
         padding-bottom: 200px;
     }
@@ -995,7 +995,7 @@ footer a{
     }
 }
 
-@media screen and (min-width: 884px) {
+@media screen and (min-width: 884px){
     .imgMenu{
         height: 170px;
     }
