@@ -803,3 +803,231 @@ footer a{
         padding-bottom: 200px;
     }
 }
+
+@media screen and (min-width: 768px){
+    .imgMenu{
+        height: 140px;
+    }
+
+    .imgMenu h2{
+        font-size: 60px;
+        bottom: 58px;
+    }
+
+    .nav{
+        width: 600px;
+        height: 880px;
+    }
+
+    .nav ul li{
+        font-size: 52px;
+    }
+
+    .nav ul{
+        margin-top: 8.5%;
+        margin-left: 30%;
+    }
+
+    .nomeTitulo{
+        height: 700px;
+    }
+
+    .primeiroNome{
+        margin: 25% 0 0 0;
+        font-size: 110px;
+    }
+
+    .sobrenome{
+        font-size: 150px;
+    }
+
+    .subtitulo{
+        margin: -10% 0 0 0;
+        font-size: 75px;
+    }
+
+    .cursor{
+        height: 110px;
+    }
+
+    .tituloQuem{
+        font-size: 120px;
+    }
+
+    .sobreMim p{
+        font-size: 52px;
+    }
+
+    .frase h1{
+        font-size: 58px;
+    }
+
+    .frase h4{
+        font-size: 40px;
+    }
+
+    .softSkills img{
+        width: 80%;
+    }
+
+    .softSkills h1{
+        font-size: 130px;
+        margin-bottom: -15%;
+    }
+
+    .softSkills h3{
+        font-size: 58px;
+    }
+
+    .projetos{
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    
+    .projetos h1{
+        font-size: 120px;
+    }
+
+    .projetos h3{
+        font-size: 80px;
+    }
+
+    .projetos button{
+        width: 420px;
+        height: 140px;
+        font-size: 62px;
+    }
+
+    .verMais{
+        height: 820px;
+    }
+
+    .verMais h1{
+        font-size: 55px;
+    }
+
+    .verMais h3{
+        font-size: 80px;
+    }
+
+    .verMais p{
+        font-size: 46px;
+    }
+
+    .verMais h5{
+        font-size: 28px;
+    }
+
+    .verMais button{
+        margin-top: 12%;
+        font-size: 46px;
+        width: 400px;
+        height: 140px;
+    }
+
+    .contato{
+        height: 4300px;
+    }
+
+    .contato h1{
+        font-size: 140px;
+    }
+
+    .contato h3{
+        font-size: 58px;
+    }
+
+    footer p{
+        font-size: 34px;
+    }
+
+    .referencias a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .contato{
+        height: 4480px;
+    }
+
+}
+
+@media screen and (min-width: 820px){
+    .imgMenu{
+        height: 150px;
+    }
+
+    .nomeTitulo{
+        height: 770px;
+    }
+
+    .primeiroNome{
+        margin: 25% 0 0 0;
+        font-size: 120px;
+    }
+
+    .sobrenome{
+        font-size: 165px;
+    }
+
+    .subtitulo{
+        margin: -10% 0 0 0;
+        font-size: 85px;
+    }
+
+    .cursor{
+        height: 120px;
+    }
+
+    .tituloQuem{
+        font-size: 130px;
+    }
+
+    .contato{
+        height: 4550px;
+    }
+}
+
+@media screen and (min-width: 834px){
+    .contato{
+        height: 4650px;
+    }
+}
+
+@media screen and (min-width: 884px) {
+    .imgMenu{
+        height: 170px;
+    }
+
+    .imgMenu h2{
+        font-size: 70px;
+        bottom: 65px;
+    }
+
+    .nomeTitulo{
+        height: 870px;
+    }
+
+    .primeiroNome{
+        margin: 25% 0 0 0;
+        font-size: 138px;
+    }
+
+    .sobrenome{
+        font-size: 185px;
+    }
+
+    .subtitulo{
+        margin: -10% 0 0 0;
+        font-size: 95px;
+    }
+
+    .cursor{
+        height: 138px;
+    }
+
+    .contato{
+        height: 4900px;
+    }
+}

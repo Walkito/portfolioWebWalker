@@ -134,14 +134,25 @@ function cursorAnimado(){
       
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 390){
+                if(resolucaoCliente >= 884){
+                    posicaoBottomInicial = 55;
+                } else if(resolucaoCliente >= 390){
                     posicaoBottomInicial = 54;
                 } else{
                     posicaoBottomInicial = 60;
                 }
                 break;
             case 2:
-                if(resolucaoCliente >= 412){
+                if(resolucaoCliente >= 884){
+                    cursor.style.height = '185px';
+                    posicaoBottomInicial = 30;
+                } else if(resolucaoCliente >= 820){
+                    cursor.style.height = '165px';
+                    posicaoBottomInicial = 30;
+                } else if(resolucaoCliente >= 768){
+                    cursor.style.height = '150px';
+                    posicaoBottomInicial = 30;
+                } else if(resolucaoCliente >= 412){
                     cursor.style.height = '85px';
                     posicaoBottomInicial = 34;
                 } else if(resolucaoCliente >= 390){
@@ -156,7 +167,19 @@ function cursorAnimado(){
                 }
                 break;
             case 3:
-                if(resolucaoCliente >= 412){
+                if(resolucaoCliente >= 884){
+                    cursor.style.height = '95px';
+                    posicaoBottomInicial = 9;
+                    posicaoEsqInicial = 52;
+                } else if(resolucaoCliente >= 820){
+                    cursor.style.height = '85px';
+                    posicaoBottomInicial = 9;
+                    posicaoEsqInicial = 52;
+                } else if(resolucaoCliente >= 768){
+                    cursor.style.height = '75px';
+                    posicaoBottomInicial = 10;
+                    posicaoEsqInicial = 50;
+                } else if(resolucaoCliente >= 412){
                     cursor.style.height = '50px';
                     posicaoBottomInicial = 10;
                     posicaoEsqInicial = 50;
@@ -200,7 +223,6 @@ function cursorAnimado(){
     function novaPosicaoEsquerda(linha, posicaoEsqInicial){
         switch(linha){
             case 1:
-                
                 if(resolucaoCliente >= 360){
                     return (posicaoEsqInicial + 4);
                 } else if(resolucaoCliente >= 320){
@@ -213,7 +235,9 @@ function cursorAnimado(){
                     return (posicaoEsqInicial + 6.5);
                 }
             case 3:
-                if(resolucaoCliente >= 390){
+                if(resolucaoCliente >= 768){
+                    return (posicaoEsqInicial + 2.8);
+                } else if(resolucaoCliente >= 390){
                     return (posicaoEsqInicial + 3.5);
                 } else{
                     return (posicaoEsqInicial + 3); 

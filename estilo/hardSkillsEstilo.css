@@ -255,3 +255,66 @@
         height: 3050px;
     } 
 }
+
+@media screen and (min-width: 768px){
+    .habilidadesDentro{
+        height: 5580px;
+    } 
+
+    .habilidadesDentro h2{
+        font-size: 120px;
+    }
+
+    .habilidadesDentro p {
+        line-height: 160%;
+        font-size: 60px;
+    }
+
+    .nivel{
+        margin-top: 35%;
+        height: 110px;
+    }
+
+    @keyframes moverNivel {
+        100%{
+            width: 340px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+    .habilidadesDentro{
+        height: 5800px;
+    } 
+
+}
+
+@media screen and (min-width: 820px){
+    .habilidadesDentro{
+        height: 5900px;
+    } 
+
+    @keyframes moverNivel {
+        100%{
+            width: 370px;
+        }
+    }
+}
+
+@media screen and (min-width: 834px){
+    .habilidadesDentro{
+        height: 6000px;
+    } 
+}
+
+@media screen and (min-width: 884px){
+    .habilidadesDentro{
+        height: 6350px;
+    } 
+
+    @keyframes moverNivel {
+        100%{
+            width: 398px;
+        }
+    }
+}
