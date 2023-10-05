@@ -25,6 +25,7 @@
     }
 
     .habilidade1 img, .habilidade2 img, .habilidade3 img, .habilidade4 img, .habilidade5 img, .habilidade6 img, .habilidade7 img, .habilidade8 img{
+        opacity: 0;
         display: block;
     }
 
@@ -83,6 +84,7 @@
     @keyframes iconsAnimation{
         100%{
             transform: translateX(0);
+            opacity: 1;
         }
     }
 }

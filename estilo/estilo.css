@@ -32,6 +32,7 @@ footer a{
 
 .projeto1, .projeto2, .projeto3, .projeto4{
     display: none;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 320px){
@@ -1192,15 +1193,170 @@ footer a{
     }
 
     .projetos{
+        display: grid;
+        grid-template-columns: auto auto auto;
         margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    .projetos button{
+        width: 250px;
+        height: 90px;
+        font-size: 42px;
+    }
+
+    .projetos img{
+        width: 75%;
     }
 
     .projetos h1{
+        grid-column: 1 / 4;
         border-radius: 100px;
         width: 100%;
         background-color: black;
         color: white;
     }
 
-    
+    .projetos h3{
+        font-size: 60px;
+    }
+
+    .projeto1{
+        grid-column: 1 / 2;
+        margin-bottom: 90%;
+    }
+
+    .projeto2{
+        margin-bottom: 90%;
+    }
+
+    .projeto3{
+        margin-bottom: 90%;
+    }
+
+    .projeto4{
+        grid-column: 2 / 3;
+        margin-top: -75%;
+    }
+
+    .projeto1, .projeto2, .projeto3, .projeto4{
+        width: 80%;
+        margin-left: 10%;
+        opacity: 0;
+    }
+
+    .slideCima{
+        animation: slideCima 2s forwards;
+    }
+
+    @keyframes slideCima{
+        0%{
+            transform: translateY(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    }
+
+    .verMais{
+        overflow: scroll;
+        width: 1150px;
+        height: 740px;
+        top: -35px;
+    }
+
+    .verMais h1{
+        margin-top: 1%;
+        margin-left: 97%;
+        font-size: 28px;
+    }
+
+    .verMais h3{
+        margin-top: 10%;
+        font-size: 46px;
+    }
+
+    .verMais h5{
+        font-size: 22px;
+    }
+
+    .verMais p{
+        margin-left: 48%;
+        font-size: 28px;
+    }
+
+    .verMais p:first-of-type{
+        margin-top: -50%;
+    }
+
+    .verMais img{
+        margin-left: 3%;
+        width: 40%;
+    }
+
+    .verMais button{
+        margin-top: -1%;
+        margin-bottom: 2%;
+        font-size: 32px;
+        width: 230px;
+        height: 120px;
+    }
+
+    .verMais2 img{
+        position: relative;
+        top: 75px;
+    }
+
+    .verMais3 img{
+        position: relative;
+        top: 85px;
+    }
+
+    .verMais4 img{
+        position: relative;
+        top: 145px;
+    }
+
+    .contato{
+        overflow: hidden;
+        height: 100%;
+        display: block;
+    }
+
+    .contato a, .contato2{
+        display: inline-block;
+    }
+
+    .contato1, .contato3, .contato4, .contato5, .contato6{
+        width: 35%;
+        margin-top: 25%;
+    }
+
+    .contato2{
+        margin-left: 15%;
+        width: 10%;
+    }
+
+    .contato h3{
+        margin-top: -10%;
+        margin-left: 15%;
+        font-size: 38px;
+    }
+
+    .contato h3:nth-child(11){
+        margin-top: -8%;
+    }
+
+    .contato h3:nth-child(13){
+        margin-top: -8%;
+    }
+
+    .footer p{
+        font-size: 32px;
+    }
+
+    .referencias{
+        margin-top: -10%;
+    }
 }

@@ -70,10 +70,12 @@ function global(){
         } else {
             elemento = pegarElemento(`.projeto${k} h3`);
         }
+        
         if(estaTela(elemento)){
             slideCards(k);
             k +=1;
         }
+
         if(k === numProjetos+1){
             clearInterval(intervaloProjetos);
         }
@@ -83,6 +85,8 @@ function global(){
 }
 
 function alteracoesDesktop(){
+    const nav = pegarElemento('.nav');
+    nav.style.zIndex = 1;
 }
 
 function abrirMenu(){
@@ -299,7 +303,11 @@ function ativarCards(i){
 
 function slideCards(i){
     let elementoDiv = pegarElemento(`.projeto${i}`);
-    adicionarClasse(elementoDiv, (i % 2) == 0 ? 'slideDireita' : 'slideEsquerda');
+    if(resolucaoCliente >= 1280){
+        adicionarClasse(elementoDiv, 'slideCima');
+    } else {
+        adicionarClasse(elementoDiv, (i % 2) == 0 ? 'slideDireita' : 'slideEsquerda');
+    }
 }
 
 function botoesVerMais(){
@@ -319,6 +327,7 @@ function addEvent(index,arrBotoes) {
 }
 
 function verMais(num){
+    alteracoesDesktop();
     const overlay = pegarElemento('.overlay');
     const verMais = pegarElemento('.verMais');
     const fechar = pegarElemento(`.verMais${num} h1`);
