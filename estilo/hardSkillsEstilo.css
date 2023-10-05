@@ -5,316 +5,145 @@
 @media screen and (min-width: 320px){
     .habilidadesDentro{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(13, 1fr);
-        height: 1950px;
+        grid-template-columns: auto auto;
+        grid-row-gap: 80px;
+        grid-column-gap: 20px;
         border: 10px solid rgb(0, 0, 0);
         border-radius: 30px;
         margin: 20% 3% 20% 3%;
+        padding: 0 0 55px 0;
         background-color: var(--corFundo);;
+        overflow: hidden;
     }
 
     .habilidadesDentro h2{
-        text-align: center;
         grid-column: 1 / 3;
-        grid-row: 1;
+        text-align: center;
         font-size: 60px;
-        margin: 5% 0 15% 0;
+        margin: 20% 0 -10% 0;
         color: white;
     }
 
-    .nivel{
-        width: 0px;
-        height: 40px;
-        border: 3px rgb(0, 0, 0) solid;
-        margin: 25% 0 0 -10%;
-    }  
-
-    .nivelAnimado{
-        animation: moverNivel forwards 0.75s;
+    .habilidade1 img, .habilidade2 img, .habilidade3 img, .habilidade4 img, .habilidade5 img, .habilidade6 img, .habilidade7 img, .habilidade8 img{
+        display: block;
     }
 
-    @keyframes moverNivel {
-        100%{
-            width: 135px;
-        }
+    .habilidade1 img, .habilidade3 img, .habilidade5 img, .habilidade7 img{
+        transform: translateX(-200%);
     }
 
-    .paragrafoAnimado{
-        animation: moverParagrafo forwards 0.75s;
-    }
-
-    .nivel p{
-        margin: 2% 0 0 -35%;
-        opacity: 0;
-        font-size: 25px;
-        font-weight: bold;
-        color: black;
-    }
-
-    @keyframes moverParagrafo {
-        100%{
-            opacity: 1;
-            margin: 2% 0 0 30%;
-        }
-    }
-
-    .habilidade1, .habilidade2, .habilidade3, .habilidade4, .habilidade5, .habilidade6, .habilidade7, .habilidade8
-    .habilidade9, .habilidade10, .habilidade11{
-        display: flex;
-        margin: 0 0 20% 0;
+    .habilidade2 img, .habilidade4 img, .habilidade6 img, .habilidade8 img{
+        transform: translateX(200%);
     }
 
     .habilidade1 img{
-        margin: -5% 0 15% -15%;
-        width: 110%;
-    }
-
-    .habilidade2 img, .habilidade3 img{
-        margin: 0 0 15% 0;
-        width: 80%;
-    }
-
-    .habilidade4 img{
-        margin: 0 0 15% 14%;
-        width: 55%;
-    }
-
-    .habilidade5 img{
-        margin: 5% 0 15% 0;
-        width: 80%;
-    }
-
-    .habilidade6 img{
-        margin: -15% 0 15% -15%;
-        width: 110%;
-    }
-
-    .habilidade7 img{
-        margin: -10% 0 15% 9%;
-        width: 65%;
-    }
-
-    .nivel7{
-        margin: -20% 0 0 0;
-    }
-
-    .habilidade8 img {
-        margin: 13% 0 15% 15%;
-        width: 60%;
-    }
-
-    .nivel8{
-        margin: 20% 0 0 0;
-    }
-
-    .habilidade9 img{
-        margin: 20% 0 15% 8%;
-        width: 70%;
-    }
-
-    .nivel9{
-        margin: 15% 0 0 0;
-    }
-
-    .habilidade10 img{
-        margin: 10% 0 15% 10%;
-        width: 70%;
-    }
-
-    .nivel10{
-        margin: 5% 0 0 0;
-    }
-
-    .habilidade11 img{
-        margin: -7% 0 0 -25%;
-        width: 135%;
-    }
-
-    .nivel11{
-        margin: -4% 0 0 0;
-    }
-}
-
-@media screen and (min-width: 360px){
-    .habilidadesDentro{
-        height: 2100px;
-    }
-    .nivel{
-        margin: 25% 0 0 -7%;
-    }
-    @keyframes moverNivel {
-        100%{
-            width: 150px;
-        }
-    }
-}
-
-@media screen and (min-width: 375px){
-    .habilidadesDentro{
-        height: 2190px;
-    }
-
-    @keyframes moverNivel {
-        100%{
-            width: 160px;
-        }
-    }
-}
-
-@media screen and (min-width: 390px){
-    .habilidadesDentro{
-        height: 2730px;
-    }
-
-    .habilidade1 img{
-        margin: -5% 0 25% -30%;
-        width: 140%;
+        margin: 0 0 0 -10%;
+        width: 130%;
     }
 
     .habilidade2 img{
-        margin: 7% 0 25% 0%;
-        width: 90%;
+        margin: 10% 0 0 6%;
+        width: 80%;
     }
 
     .habilidade3 img{
-        margin: 8% 0 30% 3%;
+        margin: 0 0 0 -5%;
+        width: 120%;
+    }
+    
+    .habilidade4 img{
+        margin: 16% 0 0 0;
         width: 85%;
     }
 
-    .habilidade4 img{
-        margin: 6% 0 15% 12%;
-        width: 68%;
-    }
     .habilidade5 img{
-        margin: 12% 0 35% 0%;
-        width: 87%;
-    }
-    .habilidade6 img{
-        margin: -22% 0 20% -25%;
-        width: 145%;
-    }
-    .habilidade7 img{
-        margin: -5% 0 20% 5%;
-        width: 80%;
-    }
-    .habilidade8 img{
-        margin: 15% 0 20% 10%;
+        margin: 0 0 0 20%;
         width: 70%;
     }
-    .habilidade9 img{
-        margin: 25% 0 30% 4%;
-        width: 80%;
-    }
-    .habilidade10 img{
-        margin: 5% 0 25% 7%;
-        width: 80%;
-    }
-    .habilidade11 img{
-        margin: 5% 0 15% -25%;
-        width: 140%;
+
+    .habilidade6 img{
+        margin: 8% 0 0 -5%;
+        width: 95%;
     }
 
-    .nivel{
-        margin: 40% 0 0 -7%;
+    .habilidade7 img{
+        margin: 8% 0 0 -26%;
+        width: 165%;
     }
 
-    @keyframes moverNivel {
+    .habilidade8 img{
+        margin: 15% 0 0 -3%;
+        width: 90%;
+    }
+
+    .iconsAnimation{
+        animation: iconsAnimation 1s forwards;
+    }
+
+    @keyframes iconsAnimation{
         100%{
-            width: 170px;
+            transform: translateX(0);
         }
     }
-}
-
-@media screen and (min-width: 393px){
-    .habilidadesDentro{
-        height: 2770px;
-    }
-
-}
-
-@media screen and (min-width: 412px){
-    .habilidadesDentro{
-        height: 2900px;
-    }
-
-    .habilidadesDentro p{
-        line-height: 120%;
-        font-size: 28px;
-    }
-
-    @keyframes moverNivel {
-        100%{
-            width: 180px;
-        }
-    }
-}
-
-@media screen and (min-width: 428px){
-    .habilidadesDentro{
-        height: 3050px;
-    } 
 }
 
 @media screen and (min-width: 768px){
-    .habilidadesDentro{
-        height: 5580px;
-    } 
-
     .habilidadesDentro h2{
         font-size: 120px;
-    }
-
-    .habilidadesDentro p {
-        line-height: 160%;
-        font-size: 60px;
-    }
-
-    .nivel{
-        margin-top: 35%;
-        height: 110px;
-    }
-
-    @keyframes moverNivel {
-        100%{
-            width: 340px;
-        }
+        margin-bottom: 10%;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1280px){
     .habilidadesDentro{
-        height: 5800px;
-    } 
-
-}
-
-@media screen and (min-width: 820px){
-    .habilidadesDentro{
-        height: 5900px;
-    } 
-
-    @keyframes moverNivel {
-        100%{
-            width: 370px;
-        }
+        grid-template-columns: auto auto auto;
+        margin: 20% 15% -30% 15%;
     }
-}
 
-@media screen and (min-width: 834px){
-    .habilidadesDentro{
-        height: 6000px;
-    } 
-}
+    .habilidadesDentro h2{
+        grid-column: 1 / 4;
+        font-size: 120px;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
 
-@media screen and (min-width: 884px){
-    .habilidadesDentro{
-        height: 6350px;
-    } 
+    .habilidade1 img{
+        margin: 0 0 0 -15%;
+        width: 125%;
+    }
 
-    @keyframes moverNivel {
-        100%{
-            width: 398px;
-        }
+    .habilidade2 img{
+        margin: 10% 0 0 15%;
+        width: 75%;
+    }
+
+    .habilidade3 img{
+        margin: -15% 0 0 -5%;
+        width: 112%;
+    }
+    
+    .habilidade4 img{
+        margin: 16% 0 0 10%;
+        width: 80%;
+    }
+
+    .habilidade5 img{
+        margin: 0 0 0 20%;
+        width: 70%;
+    }
+
+    .habilidade6 img{
+        margin: 8% 0 0 5%;
+        width: 95%;
+    }
+
+    .habilidade7 img{
+        margin: 8% 0 0 -20%;
+        width: 150%;
+    }
+
+    .habilidade8 img{
+        margin: 15% 0 0 16%;
+        width: 80%;
     }
 }

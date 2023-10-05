@@ -7,36 +7,47 @@ let intervaloProjetos;
 let i = 1;
 let k = 1;
 const numImagens = 18;
-const numeroDeNiveis = 11;
+const numeroHardSkills = 8;
 const numProjetos = 4;
 
 function global(){
-    abrirMenu();
-    fecharMenu();
+    if(resolucaoCliente >= 1280){
+        
+    } else {
+        abrirMenu();
+        fecharMenu();
+    }
+
     cursorAnimado();
 
     intervaloSobreMim = setInterval(function(){
-        if(estaTela(pegarElemento('.sobreMim img'))){
-            adicionarClasse(pegarElemento('.sobreMim'), 'sobreMimVisible');
-            clearInterval(intervaloSobreMim);
+        if(resolucaoCliente >= 1280){
+            if(estaTela(pegarElemento('.sobreMim p'))){
+                adicionarClasse(pegarElemento('.sobreMim'), 'sobreMimVisible');
+                clearInterval(intervaloSobreMim);
+            }
+        } else {
+            if(estaTela(pegarElemento('.sobreMim img'))){
+                adicionarClasse(pegarElemento('.sobreMim'), 'sobreMimVisible');
+                clearInterval(intervaloSobreMim);
+            }
         }
     },10);
     
     intervaloHardSkills = setInterval(function(){
-        let elemento = pegarElemento(`.habilidade${i}`);
+        let elemento = pegarElemento(`.habilidade${i} img`);
         if(estaTela(elemento)){
-            niveisBateria(elemento,i);
+            slideHardSkills(elemento);
             i +=1;
         }
-        if(i === numeroDeNiveis+1){
+        if(i === numeroHardSkills+1){
             clearInterval(intervaloHardSkills);
             i = 1;
         }
-    },10);
+    },10)
 
     intervaloSoftSkills = setInterval(function(){
         let elemento = pegarElemento(`.softSkill${i} img`);
-        console.log(estaTela(elemento));
         if(estaTela(elemento)){
             rodarImagens(elemento,i);
             i +=1;
@@ -69,6 +80,9 @@ function global(){
     },10);
 
     botoesVerMais();
+}
+
+function alteracoesDesktop(){
 }
 
 function abrirMenu(){
@@ -124,7 +138,9 @@ function cursorAnimado(){
         let intervalo;
         let posicaoBottomInicial;
         let posicaoEsqInicial;
-        if(resolucaoCliente >= 393){
+        if(resolucaoCliente >= 1280){
+            posicaoEsqInicial = 52;
+        } else if(resolucaoCliente >= 393){
             posicaoEsqInicial = 57;
         } else if(resolucaoCliente >= 360){
             posicaoEsqInicial = 55;
@@ -134,7 +150,9 @@ function cursorAnimado(){
       
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 884){
+                if(resolucaoCliente >= 1280){
+                    posicaoBottomInicial = 56;
+                } else if(resolucaoCliente >= 884){
                     posicaoBottomInicial = 55;
                 } else if(resolucaoCliente >= 390){
                     posicaoBottomInicial = 54;
@@ -143,7 +161,10 @@ function cursorAnimado(){
                 }
                 break;
             case 2:
-                if(resolucaoCliente >= 884){
+                if(resolucaoCliente >= 1280){
+                    cursor.style.height = '200px';
+                    posicaoBottomInicial = 27;
+                } else if(resolucaoCliente >= 884){
                     cursor.style.height = '185px';
                     posicaoBottomInicial = 30;
                 } else if(resolucaoCliente >= 820){
@@ -167,7 +188,11 @@ function cursorAnimado(){
                 }
                 break;
             case 3:
-                if(resolucaoCliente >= 884){
+                if(resolucaoCliente >= 1280){
+                    cursor.style.height = '90px';
+                    posicaoBottomInicial = 8;
+                    posicaoEsqInicial = 50;
+                } else if(resolucaoCliente >= 884){
                     cursor.style.height = '95px';
                     posicaoBottomInicial = 9;
                     posicaoEsqInicial = 52;
@@ -207,7 +232,11 @@ function cursorAnimado(){
             index +=1;
             if (letras.length === index){
                 if(linha === 3){
-                    cursor.style.left = (posicaoEsqInicial - 6) + '%';
+                    if(resolucaoCliente >= 1280){
+                        cursor.style.left = (posicaoEsqInicial - 4) + '%';
+                    } else {
+                        cursor.style.left = (posicaoEsqInicial - 6) + '%';
+                    }
                 }
                 clearInterval(intervalo);
             }
@@ -223,19 +252,25 @@ function cursorAnimado(){
     function novaPosicaoEsquerda(linha, posicaoEsqInicial){
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 360){
+                if(resolucaoCliente >= 1280){
+                    return (posicaoEsqInicial + 2.8);
+                } else if(resolucaoCliente >= 360){
                     return (posicaoEsqInicial + 4);
                 } else if(resolucaoCliente >= 320){
                     return (posicaoEsqInicial + 5);
                 }
             case 2:
-                if(resolucaoCliente >= 360){
+                if(resolucaoCliente >= 1280){
+                    return (posicaoEsqInicial + 4.8);
+                } else if(resolucaoCliente >= 360){
                     return (posicaoEsqInicial + 5.5);
                 } else if(resolucaoCliente >= 320){
                     return (posicaoEsqInicial + 6.5);
                 }
             case 3:
-                if(resolucaoCliente >= 768){
+                if(resolucaoCliente >= 1280){
+                    return (posicaoEsqInicial + 2);
+                } else if(resolucaoCliente >= 768){
                     return (posicaoEsqInicial + 2.8);
                 } else if(resolucaoCliente >= 390){
                     return (posicaoEsqInicial + 3.5);
@@ -246,40 +281,15 @@ function cursorAnimado(){
     }
 }
 
-function niveisBateria(elemento,i){
-    function pegarClasseNivel(num){
-        return document.querySelector('.nivel'+ num);
-    }
-
-    let divNivel;
-    let paragrafo;
-
-    elemento = pegarClasseNivel(i);
-    divNivel = elemento.querySelector('.nivel');
-    paragrafo = elemento.querySelector('.nivel p');
-    switch(paragrafo.textContent){
-        case '100%':
-            divNivel.style.backgroundColor = 'rgb(15, 105, 3)';
-            break;
-        case '80%':
-            divNivel.style.background = 'linear-gradient(to right, rgb(33, 238, 6) 80%, white 0%)';
-            break;
-        case '60%':
-            divNivel.style.background = 'linear-gradient(to right, rgb(221, 207, 9) 60%, white 0%)'; 
-            break;    
-        case '40%':
-            divNivel.style.background = 'linear-gradient(to right, rgb(221, 136, 9) 40%, white 0%)';
-            break;       
-        }
-    adicionarClasse(divNivel, 'nivelAnimado');
-    adicionarClasse(paragrafo, 'paragrafoAnimado');
-}
-
 function rodarImagens(elementoImg,i){
     let elementoTitulo;
     elementoTitulo = pegarElemento(`.softSkill${i} h3`);
     adicionarClasse(elementoImg, 'softSkillsRodarImagem');
     adicionarClasse(elementoTitulo, 'softSkillsTituloAnimado');
+}
+
+function slideHardSkills(elemento){
+    adicionarClasse(elemento, 'iconsAnimation');
 }
 
 function ativarCards(i){
@@ -376,5 +386,7 @@ function estaTela(elemento){
     }
 }
 
-global();
+window.addEventListener('load', function() {
+    global();
+})
 
