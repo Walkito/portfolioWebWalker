@@ -11,12 +11,10 @@ const numeroHardSkills = 8;
 const numProjetos = 4;
 
 function global(){
-    if(resolucaoCliente >= 1280){
-        
-    } else {
+    if(resolucaoCliente <= 1280){
         abrirMenu();
         fecharMenu();
-    }
+    } 
 
     cursorAnimado();
 
@@ -142,7 +140,7 @@ function cursorAnimado(){
         let intervalo;
         let posicaoBottomInicial;
         let posicaoEsqInicial;
-        if(resolucaoCliente >= 1280){
+        if(resolucaoCliente >= 1200){
             posicaoEsqInicial = 52;
         } else if(resolucaoCliente >= 393){
             posicaoEsqInicial = 57;
@@ -154,7 +152,7 @@ function cursorAnimado(){
       
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 1280){
+                if(resolucaoCliente >= 1200){
                     posicaoBottomInicial = 56;
                 } else if(resolucaoCliente >= 884){
                     posicaoBottomInicial = 55;
@@ -165,7 +163,10 @@ function cursorAnimado(){
                 }
                 break;
             case 2:
-                if(resolucaoCliente >= 1280){
+                if(resolucaoCliente >= 1300){
+                    cursor.style.height = '160px';
+                    posicaoBottomInicial = 27;
+                } else if(resolucaoCliente >= 1200){
                     cursor.style.height = '200px';
                     posicaoBottomInicial = 27;
                 } else if(resolucaoCliente >= 884){
@@ -192,7 +193,10 @@ function cursorAnimado(){
                 }
                 break;
             case 3:
-                if(resolucaoCliente >= 1280){
+                if(resolucaoCliente >= 1300){
+                    cursor.style.height = '60px';
+                    posicaoBottomInicial = 6;
+                } else if(resolucaoCliente >= 1200){
                     cursor.style.height = '90px';
                     posicaoBottomInicial = 8;
                     posicaoEsqInicial = 50;
@@ -236,7 +240,9 @@ function cursorAnimado(){
             index +=1;
             if (letras.length === index){
                 if(linha === 3){
-                    if(resolucaoCliente >= 1280){
+                    if(resolucaoCliente >= 1300){
+                        cursor.style.left = (posicaoEsqInicial - 1) + '%';
+                    } else if(resolucaoCliente >= 1200){
                         cursor.style.left = (posicaoEsqInicial - 4) + '%';
                     } else {
                         cursor.style.left = (posicaoEsqInicial - 6) + '%';
@@ -256,7 +262,9 @@ function cursorAnimado(){
     function novaPosicaoEsquerda(linha, posicaoEsqInicial){
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 1280){
+                if(resolucaoCliente >= 1300){
+                    return (posicaoEsqInicial + 2.5);
+                } else if(resolucaoCliente >= 1200){
                     return (posicaoEsqInicial + 2.8);
                 } else if(resolucaoCliente >= 360){
                     return (posicaoEsqInicial + 4);
@@ -264,7 +272,9 @@ function cursorAnimado(){
                     return (posicaoEsqInicial + 5);
                 }
             case 2:
-                if(resolucaoCliente >= 1280){
+                if(resolucaoCliente >= 1300){
+                    return (posicaoEsqInicial + 3.6);
+                } else if(resolucaoCliente >= 1200){
                     return (posicaoEsqInicial + 4.8);
                 } else if(resolucaoCliente >= 360){
                     return (posicaoEsqInicial + 5.5);
@@ -272,7 +282,9 @@ function cursorAnimado(){
                     return (posicaoEsqInicial + 6.5);
                 }
             case 3:
-                if(resolucaoCliente >= 1280){
+                if(resolucaoCliente >= 1300){
+                    return (posicaoEsqInicial + 1);
+                } else if(resolucaoCliente >= 1200){
                     return (posicaoEsqInicial + 2);
                 } else if(resolucaoCliente >= 768){
                     return (posicaoEsqInicial + 2.8);
