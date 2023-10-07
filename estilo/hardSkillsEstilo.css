@@ -24,16 +24,17 @@
         color: white;
     }
 
-    .habilidade1 img, .habilidade2 img, .habilidade3 img, .habilidade4 img, .habilidade5 img, .habilidade6 img, .habilidade7 img, .habilidade8 img{
+    .habilidade1 img, .habilidade2 img, .habilidade3 img, .habilidade4 img, .habilidade5 img, .habilidade6 img, .habilidade7 img, 
+    .habilidade8 img, .habilidade9 img, .habilidade10 img{
         opacity: 0;
         display: block;
     }
 
-    .habilidade1 img, .habilidade3 img, .habilidade5 img, .habilidade7 img{
+    .habilidade1 img, .habilidade3 img, .habilidade5 img, .habilidade7 img, .habilidade9 img{
         transform: translateX(-200%);
     }
 
-    .habilidade2 img, .habilidade4 img, .habilidade6 img, .habilidade8 img{
+    .habilidade2 img, .habilidade4 img, .habilidade6 img, .habilidade8 img, .habilidade10 img{
         transform: translateX(200%);
     }
 
@@ -75,6 +76,16 @@
     .habilidade8 img{
         margin: 15% 0 0 -3%;
         width: 90%;
+    }
+
+    .habilidade9 img{
+        margin: 2% 0 0 15%;
+        width: 80%;
+    }
+
+    .habilidade10 img{
+        margin: 2% 0 0 -1%;
+        width: 85%;
     }
 
     .iconsAnimation{
@@ -148,6 +159,20 @@
         margin: 15% 0 0 16%;
         width: 80%;
     }
+
+    .habilidade9 img{
+        margin: 15% 0 0 16%;
+        width: 75%;
+    }
+
+    .habilidade10 img{
+        margin: 4% 0 0 13%;
+        width: 80%;
+    }
+
+    .habilidade10{
+        grid-column: 2 / 3;
+    }
 }
 
 @media screen and (min-width: 1300px){
@@ -196,6 +221,16 @@
         margin: 15% 0 0 12%;
         width: 65%;
     }
+
+    .habilidade9 img{
+        margin: 12% 0 0 16%;
+        width: 65%;
+    }
+
+    .habilidade10 img{
+        margin: 2% 0 0 12%;
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 1400px){
@@ -207,5 +242,17 @@
 @media screen and (min-width: 1700px){
     .habilidadesDentro h2{
         font-size: 85px;     
+    }
+}
+
+@media screen and (min-width: 1900px){
+    .habilidadesDentro h2{
+        font-size: 95px;     
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .habilidadesDentro h2{
+        font-size: 110px;     
     }
 }

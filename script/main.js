@@ -7,7 +7,7 @@ let intervaloProjetos;
 let i = 1;
 let k = 1;
 const numImagens = 18;
-const numeroHardSkills = 8;
+const numeroHardSkills = 10;
 const numProjetos = 4;
 
 function global(){
@@ -152,7 +152,11 @@ function cursorAnimado(){
       
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 1700){
+                if(resolucaoCliente >= 2000){
+                    posicaoBottomInicial = 52;
+                } else if(resolucaoCliente >= 1900){
+                    posicaoBottomInicial = 55;
+                } else if(resolucaoCliente >= 1700){
                     posicaoBottomInicial = 60;
                 } else if(resolucaoCliente >= 1200){
                     posicaoBottomInicial = 56;
@@ -165,7 +169,13 @@ function cursorAnimado(){
                 }
                 break;
             case 2:
-                if(resolucaoCliente >= 1700){
+                if(resolucaoCliente >= 2000){
+                    cursor.style.height = '240px';
+                    posicaoBottomInicial = 24;
+                } else if(resolucaoCliente >= 1900){
+                    cursor.style.height = '230px';
+                    posicaoBottomInicial = 26;
+                } else if(resolucaoCliente >= 1700){
                     cursor.style.height = '230px';
                     posicaoBottomInicial = 29;
                 } else if(resolucaoCliente >= 1300){
@@ -198,7 +208,13 @@ function cursorAnimado(){
                 }
                 break;
             case 3:
-                if(resolucaoCliente >= 1700){
+                if(resolucaoCliente >= 2000){
+                    cursor.style.height = '95px';
+                    posicaoBottomInicial = 6;
+                } else if(resolucaoCliente >= 1900){
+                    cursor.style.height = '80px';
+                    posicaoBottomInicial = 6;
+                } else if(resolucaoCliente >= 1700){
                     cursor.style.height = '80px';
                     posicaoBottomInicial = 9;
                 } else if(resolucaoCliente >= 1400){
@@ -273,7 +289,11 @@ function cursorAnimado(){
     function novaPosicaoEsquerda(linha, posicaoEsqInicial){
         switch(linha){
             case 1:
-                if(resolucaoCliente >= 1700){
+                if(resolucaoCliente >= 2000){
+                    return (posicaoEsqInicial + 2.4);
+                } else if(resolucaoCliente >= 1900){
+                    return (posicaoEsqInicial + 2.2);
+                } else if(resolucaoCliente >= 1700){
                     return (posicaoEsqInicial + 2.6);
                 } else if(resolucaoCliente >= 1400){
                     return (posicaoEsqInicial + 2.2);
@@ -287,7 +307,9 @@ function cursorAnimado(){
                     return (posicaoEsqInicial + 5);
                 }
             case 2:
-                if(resolucaoCliente >= 1700){
+                if(resolucaoCliente >= 1900){
+                    return (posicaoEsqInicial + 3.6);
+                } else if(resolucaoCliente >= 1700){
                     return (posicaoEsqInicial + 4);
                 } else if(resolucaoCliente >= 1400){
                     return (posicaoEsqInicial + 3.2);
@@ -301,7 +323,11 @@ function cursorAnimado(){
                     return (posicaoEsqInicial + 6.5);
                 }
             case 3:
-                if(resolucaoCliente >= 1400){
+                if(resolucaoCliente >= 2000){
+                    return (posicaoEsqInicial + 1.1);
+                } else if(resolucaoCliente >= 1900){
+                    return (posicaoEsqInicial + 1);
+                } else if(resolucaoCliente >= 1400){
                     return (posicaoEsqInicial + 1.1);
                 } else if(resolucaoCliente >= 1300){
                     return (posicaoEsqInicial + 1);
