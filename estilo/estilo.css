@@ -1109,12 +1109,12 @@ footer a{
     }
 
     .tituloQuem{
-        margin: 12% 0 -2% 28%;
+        margin: 12% 0 -2% 24%;
         border-radius: 100px;
         width: 100%;
         background-color: black;
         color: white;
-        font-size: 55px;
+        font-size: 70px;
         display: inline;
         padding: 0 80px;
     }
@@ -1124,7 +1124,10 @@ footer a{
     }
 
     .sobreMim img{
-        display: none;
+        content: url('/imagens/fotoQuadrada.png');
+        width: 45%;
+        float: left;
+        margin-left: 2%;
     }
 
     .sobreMim p {
@@ -1136,6 +1139,11 @@ footer a{
 
     .sobreMim p:first-of-type{
         margin-top: -1%;
+    }
+
+    .sobreMim p:last-of-type{
+        margin-top: -2%;
+        margin-bottom: 1%;
     }
 
     .frase{
@@ -1393,6 +1401,10 @@ footer a{
     .referencias{
         margin-top: -10%;
     }
+
+    .referencias a{
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width: 1300px){
@@ -1439,13 +1451,18 @@ footer a{
         font-size: 60px;
     }
 
+    .sobreMim img{
+        width: 31%;
+        margin: -4% 0 2% 2%;
+    }
+
     .sobreMim{
-        margin-top: 3%;
-        margin-bottom: -15%;
+        overflow: hidden;
+        margin: 3% 10% -15% 10%;
     }
 
     .sobreMim p:first-of-type{
-        margin-top: -4%;
+        margin-top: -2%;
     }
 
     .sobreMim p:last-of-type{
@@ -1453,7 +1470,8 @@ footer a{
     }
 
     .sobreMim p {
-        font-size: 22px;
+        font-size: 26px;
+        margin-left: 35%;
     }
 
     .frase{
@@ -1568,5 +1586,342 @@ footer a{
 
     .referencias{
         margin-top: -10%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .nav ul li{
+        font-size: 40px;
+    }
+
+    .nomeTitulo{
+        height: 600px;
+    }
+
+    .primeiroNome{
+        margin: -1% 0;
+        font-size: 110px;
+    }
+
+    .sobrenome{
+        margin-top: -18%;
+    }
+
+    .subtitulo{
+        margin: -6% 0 0 0;
+        font-size: 70px;
+    }
+
+    .cursor{
+        height: 110px;
+    }
+
+    .tituloQuem{
+        font-size: 70px;
+        margin-left: 28%;
+    }
+
+    .sobreMim p{
+        font-size: 34px;
+        margin-left: 45%;
+    }
+
+    .sobreMim img{
+        margin-top: -2%;
+        width: 40%;
+    }
+
+    .sobreMim p:first-of-type{
+        margin-top: -4%;
+    }
+
+    .frase h1{
+        font-size: 35px;
+    }
+
+    .frase h4{
+        margin-top: -5%;
+        font-size: 28px;
+    }
+
+    .softSkills h1{
+        font-size: 70px;
+    }
+
+    .softSkill2 img{
+        margin-top: 41.5%;
+    }
+
+    .softSkill3 img{
+        margin-top: 47.8%;
+    }
+
+    .softSkill5 img{
+        margin-top: 25%;
+    }
+
+    .softSkill14 img{
+        margin-top: 25%;
+    }
+
+    .softSkill16 img{
+        margin-top: 35%;
+    }
+
+    .projetos h1{
+        font-size: 70px;
+    }
+
+    .projetos h3{
+        font-size: 50px;
+    }
+
+    .verMais{
+        width: 1200px;
+        height: 680px;
+        left: 60px;
+    }
+
+    .verMais h1{
+        font-size: 38px;
+    }
+
+    .verMais h3{
+        margin-top: 10%;
+        font-size: 60px;
+    }
+
+    .verMais h5{
+        margin-top: -3%;
+        font-size: 24px;
+    }
+
+    .verMais p{
+        font-size: 32px;
+    }
+
+    .verMais img{
+        margin-left: 3%;
+        width: 40%;
+    }
+
+    .verMais button{
+        font-size: 32px;
+        width: 260px;
+        height: 92px;
+    }
+
+    .verMais2 img{
+        top: 130px;
+    }
+
+    .verMais3 img{
+        top: 210px;
+    }
+
+    .contato h1{
+        font-size: 70px;
+    }
+
+    .contato2{
+        margin-left: 13%;
+        width: 10%;
+    }
+
+    .contato h3{
+        margin-top: -9%;
+        margin-left: 10%;
+    }
+
+    .contato h3:nth-child(11){
+        margin-top: -8%;
+    }
+
+    .contato h3:nth-child(13){
+        margin-top: -6%;
+    }
+
+    .footer p{
+        font-size: 32px;
+    }
+
+    .referencias{
+        margin-top: -10%;
+    }
+
+    .referencias p{
+        font-size: 28px;
+    }
+
+    .referencias a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .nav ul li{
+        font-size: 50px;
+    }
+
+    .nomeTitulo{
+        height: 740px;
+    }
+
+    .primeiroNome{
+        margin: -5% 0;
+        font-size: 150px;
+    }
+
+    .sobrenome{
+        margin-top: -22%;
+        font-size: 230px;
+    }
+
+    .subtitulo{
+        margin: -5% 0 0 0;
+        font-size: 80px;
+    }
+
+    .cursor{
+        height: 150px;
+    }
+
+    .tituloQuem{
+        font-size: 85px;
+    }
+
+    .sobreMim p{
+        font-size: 40px;
+    }
+
+    .sobreMim img{
+        width: 41%;
+    }
+
+    .frase h1{
+        font-size: 42px;
+    }
+
+    .frase h4{
+        font-size: 30px;
+    }
+
+    .softSkills h1{
+        font-size: 85px;
+    }
+
+    .softSkills h3{
+        font-size: 36px;
+    }
+
+    .softSkill16 img{
+        margin-top: 38%;
+    }
+
+    .softSkill18 img{
+        margin-top: 30%;
+    }
+
+    .projetos h1{
+        font-size: 85px;
+    }
+    
+    .projetos h3{
+        font-size: 65px;
+    }
+    .projetos img{
+        width: 85%;
+    }
+
+    .projetos button{
+        font-size: 48px;
+        width: 280px;
+    }
+
+    .verMais{
+        width: 1500px;
+        height: 950px;
+        left: 50px;
+    }
+
+    .verMais h1{
+        font-size: 44px;
+    }
+
+    .verMais h3{
+        margin-top: 10%;
+        font-size: 75px;
+    }
+
+    .verMais h5{
+        margin-top: 3%;
+        font-size: 30px;
+    }
+
+    .verMais p{
+        font-size: 40px;
+    }
+
+    .verMais p:first-of-type{
+        margin-top: -53%;
+    }
+
+    .verMais img{
+        margin-left: 3%;
+        width: 42%;
+    }
+
+    .verMais button{
+        font-size: 38px;
+        width: 320px;
+        height: 120px;
+    }
+
+    .verMais2 img{
+        top: 130px;
+    }
+
+    .verMais3 img{
+        top: 210px;
+    }
+
+    .contato h1{
+        font-size: 85px;
+    }
+
+    .contato1, .contato3, .contato4, .contato5, .contato6{
+        width: 45%;
+        margin-top: 25%;
+    }
+
+    .contato2{
+        margin-left: 9%;
+        width: 12%;
+    }
+
+    .contato h3{
+        margin-top: -9%;
+        margin-left: 7%;
+        font-size: 46px;
+    }
+
+    .contato h3:nth-child(13){
+        margin-top: -7%;
+    }
+
+    .footer p{
+        font-size: 40px;
+    }
+
+    .referencias{
+        margin-top: -10%;
+    }
+
+    .referencias p{
+        font-size: 34px;
+    }
+
+    .referencias a{
+        font-size: 22px;
     }
 }

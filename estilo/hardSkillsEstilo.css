@@ -197,3 +197,15 @@
         width: 65%;
     }
 }
+
+@media screen and (min-width: 1400px){
+    .habilidadesDentro h2{
+        font-size: 70px;     
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .habilidadesDentro h2{
+        font-size: 85px;     
+    }
+}
